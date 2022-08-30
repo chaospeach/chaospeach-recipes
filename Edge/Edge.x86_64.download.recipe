@@ -17,7 +17,7 @@
         <key>LINKID</key>
         <string>2069148</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://go.microsoft.com/fwlink/?linkid=%LINKID%&platform=Mac&Consent=0&channel=%CHANNEL%</string>
+        <string>https://go.microsoft.com/fwlink/?linkid=%LINKID%&amp;platform=Mac&amp;Consent=0&amp;channel=%CHANNEL%</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
@@ -29,7 +29,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <stirng>%DOWNLOAD_URL%</string>
+                <string>%DOWNLOAD_URL%</string>
                 <key>filename</key>
                 <string>%NAME%.%ARCHITECTURE%.pkg</string>
             </dict>
