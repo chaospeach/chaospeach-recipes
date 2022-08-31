@@ -18,6 +18,8 @@
         <string>2069148</string>
         <key>DOWNLOAD_URL</key>
         <string>https://go.microsoft.com/fwlink/?linkid=%LINKID%&amp;platform=Mac&amp;Consent=0&amp;channel=%CHANNEL%</string>
+        <key>METADATA_URL</key>
+        <string>https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409EDGE01.xml</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
