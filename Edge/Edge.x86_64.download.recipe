@@ -46,7 +46,7 @@
                 <key>url</key>
                 <string>%DOWNLOAD_URL%</string>
                 <key>filename</key>
-                <string>%NAME%.%version%.%ARCHITECTURE%.pkg<</string>
+                <string>%NAME%.%version%.%ARCHITECTURE%.pkg</string>
             </dict>
         </dict>
         <dict>
