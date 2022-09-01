@@ -32,6 +32,8 @@
             <array>
                 <string>%ARCHITECTURE%</string>
             </array>
+            <key>version</key>
+            <string>%version%</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>

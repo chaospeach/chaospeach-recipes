@@ -27,6 +27,19 @@
     <array>
         <dict>
             <key>Processor</key>
+            <string>PkgVersionByURLandKey</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%METADATA_URL%</string>
+                <key>key</key>
+                <string>Update Version</string>
+                <key>arch</key>
+                <string>%ARCHITECTURE%</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
