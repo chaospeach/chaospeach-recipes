@@ -3,9 +3,7 @@
 # Copyright 2022
 # based on MSOfficeMacURLandUpdateInfoProvider.py by Allister Banks and Tim Sutton
 #
-from curses import meta
 import plistlib
-import re
 from typing import Dict, List
 
 from autopkglib import ProcessorError
