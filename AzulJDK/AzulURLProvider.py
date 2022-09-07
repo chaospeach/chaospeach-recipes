@@ -47,7 +47,10 @@ class AzulURLProvider(URLGetter):
 
     output_variables = {
         "download_url": {
-            "description": "URL for downloading the latest version of JRE"
+            "description": "URL for downloading the latest version of jre/jdk"
+        },
+        "download_version": {
+            "description": "Version of jre/jdk to from the download_url"
         }
     }
 
@@ -55,21 +58,22 @@ class AzulURLProvider(URLGetter):
         """ Download the directory listing at BASE_URL"""
 
         # Use the download feature of URLGetter (yay subclasses)
-        version_page = self.download( BASEURL, text=True )
+        version_page = self.download(BASEURL, text=True)
 
         # Craft regex to scrape for our specified version (returns tuples)
         version_arch = ARCHITECTURES[self.env["arch"]]
         re_basever = "%s".replace(".", "\.") % self.env["base_version"]
         re_match = re.compile("\"zulu(.*)-ca-(%s%s.*)-%s_%s.dmg\"" % ( self.env["environment"], re_basever, OS, version_arch ))
-        version_matches = re.findall( re_match, version_page )
+        version_matches = re.findall(re_match, version_page)
         self.output("Looking versions for %s (%s)" % ( self.env["base_version"], version_arch ))
 
         # Ensure we found something, otherwise there isn't anything available for that base_version
         if not version_matches:
-            raise ProcessorError("No versions found with the base version %s and architecture of %s" % (self.env["base_version"], self.env["arch"] ))
+            raise ProcessorError("No versions found with the base version %s and architecture of %s" % ( self.env["base_version"], self.env["arch"] ))
         # Sort and pull latest version
-        version_matches = sorted( version_matches, key=lambda tup: tup[1], reverse=True )
+        version_matches = sorted(version_matches, key=lambda tup: tup[1], reverse=True)
         version_latest = version_matches[0]
+        self.env["download_version"] = version_latest[0]
         self.output("Latest version of (%s) is %s. zulu-%s" % ( self.env['base_version'], version_latest[1], version_latest[0] ))
 
         # Assemble latest components into a filename, and set output download_url 

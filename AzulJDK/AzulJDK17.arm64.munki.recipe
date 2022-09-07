@@ -47,7 +47,6 @@
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
         </dict>
-    <dict>
     </dict>
 </dict>
 </plist>
