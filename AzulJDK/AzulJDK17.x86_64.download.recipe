@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Intel build of Microsoft Edge</string>
+    <string>Downloads the latest build of Azul JDK 17 (LTS) for Intel (x86_64)</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.x86_64.azul-jdk17</string>
+    <string>com.github.ashesamurai.download.x86_64.azuljdk17</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>

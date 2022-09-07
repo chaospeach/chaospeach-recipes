@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest build of Azul JDK 17 (LTS) for arm64</string>
+    <string>Downloads the latest build of Azul JDK 11 (LTS) for Intel (x86_64)</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.arm64.azuljdk17</string>
+    <string>com.github.ashesamurai.download.x86_64.azuljdk11</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>
-        <string>17</string>
+        <string>11</string>
         <key>ARCHITECTURE</key>
-        <string>arm64</string>
+        <string>x86_64</string>
         <key>ENVIRONMENT</key>
         <string>jdk</string>
         <key>NAME</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest ARM64 build of Microsoft Edge</string>
+    <string>Downloads the latest build of Azul JDK for the specified achitecture and version</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.download.azuljava</string>
     <key>Input</key>

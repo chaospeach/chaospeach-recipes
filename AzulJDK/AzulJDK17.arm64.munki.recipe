@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest ARM64 build of AzulJDK using specified base version.</string>
+    <string>Downloads and imports latest arm64 version of AzulJDK 17 (LTS) from Zulu.</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.munki.arm64.azuljdk17</string>
     <key>Input</key>

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest ARM64 build of Microsoft Edge</string>
+    <string>Downloads the latest arm64 build of Microsoft Edge</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.download.arm64.msedge</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Edge</string>
+        <string>Microsoft Edge</string>
         <key>ARCHITECTURE</key>
         <string>arm64</string>
         <key>CHANNEL</key>
