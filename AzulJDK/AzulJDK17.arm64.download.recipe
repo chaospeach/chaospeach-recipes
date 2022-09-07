@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest ARM64 build of Microsoft Edge</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.arm64.azul-jdk17</string>
+    <string>com.github.ashesamurai.download.arm64.azuljdk17</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>

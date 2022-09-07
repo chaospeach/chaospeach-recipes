@@ -35,7 +35,7 @@ class AzulURLProvider(URLGetter):
             "description": "Base jdk/jre version to check for. Varying granularity can be used."
         },
         "arch": {
-            "reqiured": True,
+            "required": True,
             "description": "Specify architecture of the the environment"
         },
         "environment": {

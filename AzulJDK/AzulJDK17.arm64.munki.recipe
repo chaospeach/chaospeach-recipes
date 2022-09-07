@@ -1,52 +1,67 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of Microsoft Edge (ARM64) and imports it into Munki</string>
+    <string>Downloads the latest ARM64 build of Microsoft Edge</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.arm64.azul-jdk17</string>
+    <string>com.github.ashesamurai.download.arm64.azuljdk17</string>
     <key>Input</key>
     <dict>
-        <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/zulu/jdk17/%ARCHITECTURE%</string>
-        <key>pkginfo</key>
-        <dict>
-            <key>catalogs</key>
-            <array>
-                <string>testing</string>
-            </array>
-            <key>description</key>
-            <string>AzulJDK%BASE_VERSION% for %ARCHITECTURE%</string>
-            <key>name</key>
-            <string>%NAME%</string>
-            <key>display_name</key>
-            <string>AzulJDK 17</string>
-            <key>unattended_install</key>
-            <true />
-            <key>supported_architectures</key>
-            <array>
-                <string>%ARCHITECTURE%</string>
-            </array>
-        </dict>
+        <key>BASE_VERSION</key>
+        <string>17</string>
+        <key>ARCHITECTURE</key>
+        <string>arm64</string>
+        <key>ENVIRONMENT</key>
+        <string>jdk</string>
+        <key>NAME</key>
+        <string>AzulJDK %BASE_VERSION%</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
-    <key>ParentRecipe</key>
-    <string>com.githun.ashesamurai.download.arm64.azul-jdk17</string>
     <key>Process</key>
-    <dict>
+    <array>
+        <dict>
             <key>Processor</key>
-            <string>MunkiImporter</string>
+            <string>AzulURLProvider</string>
             <key>Arguments</key>
             <dict>
-                <key>pkg_path</key>
-                <string>%pathname%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
+                <key>base_version</key>
+                <string>%BASE_VERSION%</string>
+                <key>arch</key>
+                <string>%ARCHITECTURE%</string>
+                <key>environment</key>
+                <string>%ENVIRONMENT%</string>
             </dict>
         </dict>
-    </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%download_url%</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_path</key>
+                <string>%pathname%</string>
+                <key>expected_authority_names</key>
+                <array>
+                    <string>Developer ID Installer: Azul Systems, Inc. (TDTHCUPYFR)</string>
+                    <string>Developer ID Certification Authority</string>
+                    <string>Apple Root CA</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
 </dict>
 </plist>
