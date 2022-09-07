@@ -1,7 +1,14 @@
 #!/usr/local/autopkg/python
 #
-# Copyright 2022
-# based on MSOfficeMacURLandUpdateInfoProvider.py by Allister Banks and Tim Sutton
+# Copyright 2022 Ashe Night
+#
+# Licensed under the Educational Community License, Version 2.0 (ECL-2.0);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://opensource.org/licenses/ECL-2.0
+#
+# Based on MSOfficeMacURLandUpdateInfoProvider.py by Allister Banks and Tim Sutton
 #
 import plistlib
 from typing import Dict, List
