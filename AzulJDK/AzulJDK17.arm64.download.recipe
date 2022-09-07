@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest ARM64 build of Microsoft Edge</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.arm64.msedge</string>
+    <string>com.github.ashesamurai.download.arm64.azul-jdk17</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>
@@ -15,7 +15,7 @@
         <key>ENVIRONMENT</key>
         <string>jdk</string>
         <key>NAME</key>
-        <string>AzulJDK</string>
+        <string>AzulJDK 17</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
