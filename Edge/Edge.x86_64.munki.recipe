@@ -8,6 +8,7 @@
     <string>com.github.ashesamurai.munki.x86_64.msedge</string>
     <key>Input</key>
     <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/microsoft/edge/%ARCHITECTURE%</string>
         <key>pkginfo</key>
         <dict>
