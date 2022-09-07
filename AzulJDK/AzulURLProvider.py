@@ -65,7 +65,7 @@ class AzulURLProvider(URLGetter):
         re_basever = "%s".replace(".", "\.") % self.env["base_version"]
         re_match = re.compile("\"zulu(.*)-ca-(%s%s.*)-%s_%s.dmg\"" % ( self.env["environment"], re_basever, OS, version_arch ))
         version_matches = re.findall(re_match, version_page)
-        self.output("Looking versions for %s (%s)" % ( self.env["base_version"], version_arch ))
+        self.output("Checking versions for %s (%s)" % ( self.env["base_version"], version_arch ))
 
         # Ensure we found something, otherwise there isn't anything available for that base_version
         if not version_matches:
