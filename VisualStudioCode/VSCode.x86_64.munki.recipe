@@ -8,10 +8,6 @@
     <string>com.github.ashesamurai.munki.x86_64.vscode</string>
     <key>Input</key>
     <dict>
-        <key>BUILD</key>
-        <string>stable</string>
-        <key>OS_ARCHITECTURE</key>
-        <string>darwin</string>
         <key>ARCHITECTURE</key>
         <string>x86_64</string>
         <key>MUNKI_REPO_SUBDIR</key>
@@ -39,7 +35,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.dmg.vscode</string>
+    <string>com.github.ashesamurai.dmg.x86_64.vscode</string>
     <key>Process</key>
     <array>
         <dict>
