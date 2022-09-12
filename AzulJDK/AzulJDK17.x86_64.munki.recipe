@@ -3,14 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads and imports the latest arm64 version of Microsoft Edge</string>
+    <string>Downloads and imports latest Intel (x86_64) version of AzulJDK 17 (LTS) from Zulu.</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.arm64.msedge</string>
-    
+    <string>com.github.ashesamurai.munki.x86_64.azuljdk17</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/microsoft/edge/%ARCHITECTURE%</string>
+        <string>apps/zulu/azuljdk/%BASE_VERSION%/%ARCHITECTURE%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -18,7 +17,7 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Microsoft Edge is the fast and secure browser that helps you protect your data and save time and money.</string>
+            <string></string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
@@ -34,7 +33,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.arm64.msedge</string>
+    <string>com.github.ashesamurai.download.x86_64.azuljdk17</string>
     <key>Process</key>
     <array>
         <dict>

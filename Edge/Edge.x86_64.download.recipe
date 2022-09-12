@@ -3,70 +3,27 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest x86_64 build of Microsoft Edge</string>
+    <string>Downloads the latest Intel (x86_64) build of Microsoft Edge</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.download.x86_64.msedge</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>Edge</string>
         <key>ARCHITECTURE</key>
         <string>x86_64</string>
         <key>CHANNEL</key>
         <string>Stable</string>
         <key>LINKID</key>
         <string>2069148</string>
-        <key>DOWNLOAD_URL</key>
-        <string>https://go.microsoft.com/fwlink/?linkid=%LINKID%&amp;platform=Mac&amp;Consent=0&amp;channel=%CHANNEL%</string>
-        <key>METADATA_URL</key>
-        <string>https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409EDGE01.xml</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ashesamurai.download.msedge</string>
     <key>Process</key>
     <array>
         <dict>
             <key>Processor</key>
-            <string>PkgVersionByURLandKey</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%METADATA_URL%</string>
-                <key>key</key>
-                <string>Update Version</string>
-                <key>arch</key>
-                <string>%ARCHITECTURE%</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.%version%.%ARCHITECTURE%.pkg</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>EndOfCheckPhase</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>CodeSignatureVerifier</string>
-            <key>Arguments</key>
-            <dict>
-                <key>input_path</key>
-                <string>%pathname%</string>
-                <key>expected_authority_names</key>
-                <array>
-                    <string>Developer ID Installer: Microsoft Corporation (UBF8T346G9)</string>
-                    <string>Developer ID Certification Authority</string>
-                    <string>Apple Root CA</string>
-                </array>
-            </dict>
         </dict>
     </array>
 </dict>

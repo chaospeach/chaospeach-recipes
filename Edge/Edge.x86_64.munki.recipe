@@ -3,15 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of Microsoft Edge (Intel) and imports it into Munki</string>
+    <string>Downloads and imports the latest Intel (x86_64) version of Microsoft Edge</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.munki.x86_64.msedge</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>Edge</string>
-        <key>ARCHITECTURE</key>
-        <string>x86_64</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/microsoft/edge/%ARCHITECTURE%</string>
         <key>pkginfo</key>
@@ -23,7 +19,7 @@
             <key>description</key>
             <string>Microsoft Edge is the fast and secure browser that helps you protect your data and save time and money.</string>
             <key>display_name</key>
-            <string>Microsoft Edge</string>
+            <string>%NAME%</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>

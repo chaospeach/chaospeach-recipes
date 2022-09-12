@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads and imports the latest arm64 version of Microsoft Edge</string>
+    <string>Downloads/Packages the latest Intel (x86_64) build of Visual Studio Code and imports to Munki</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.arm64.msedge</string>
-    
+    <string>com.github.ashesamurai.munki.x86_64.vscode</string>
     <key>Input</key>
     <dict>
+        <key>ARCHITECTURE</key>
+        <string>x86_64</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/microsoft/edge/%ARCHITECTURE%</string>
+        <string>apps/microsoft/visualstudiocode/%ARCHITECTURE%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -18,9 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Microsoft Edge is the fast and secure browser that helps you protect your data and save time and money.</string>
+            <string>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</string>
             <key>display_name</key>
-            <string>%NAME%</string>
+            <string>Visual Studio Code</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -34,7 +35,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.arm64.msedge</string>
+    <string>com.github.ashesamurai.dmg.x86_64.vscode</string>
     <key>Process</key>
     <array>
         <dict>
@@ -43,7 +44,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%pathname%</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
