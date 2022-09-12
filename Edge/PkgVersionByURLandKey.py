@@ -45,6 +45,9 @@ class PkgVersionByURLandKey(URLGetter):
     output_variables = {
         "version": {
             "description": "Version extracted from MS metadata"
+        },
+        "direct_url": {
+            "description": "URL extracted from 'Location' key"
         }
     }
 
@@ -79,6 +82,10 @@ class PkgVersionByURLandKey(URLGetter):
         latest = data.get(plist_key)
         self.env["version"] = latest
         self.output("Extracted version is %s" % self.env["version"])
+
+        direct = data.get('Location')
+        self.env["direct_url"] = direct
+        self.output("Direct download URL is: %s" % self.env["direct_url"])
 
         
     def main(self):

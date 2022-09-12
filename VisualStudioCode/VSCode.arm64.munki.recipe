@@ -23,9 +23,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string></string>
+            <string>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</string>
             <key>display_name</key>
-            <string>%NAME%</string>
+            <string>Visual Studio Code</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
