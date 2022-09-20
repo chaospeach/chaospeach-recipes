@@ -17,7 +17,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string></string>
+            <string>Azul JDK 17 (LTS)</string>
+            <key>developer</key>
+            <string>Zulu</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>

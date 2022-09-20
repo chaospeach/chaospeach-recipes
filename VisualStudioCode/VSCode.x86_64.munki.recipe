@@ -20,6 +20,8 @@
             </array>
             <key>description</key>
             <string>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</string>
+            <key>developer</key>
+            <string>Microsoft</string>
             <key>display_name</key>
             <string>Visual Studio Code</string>
             <key>name</key>

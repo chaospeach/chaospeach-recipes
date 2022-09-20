@@ -22,6 +22,8 @@
             </array>
             <key>description</key>
             <string>Zoom. Video meetings, phone calls, whiteboarding, and annotation on your personal collaboration device.</string>
+            <key>developer</key>
+            <string>Zoom.us</string>
             <key>display_name</key>
             <string>Zoom</string>
             <key>name</key>

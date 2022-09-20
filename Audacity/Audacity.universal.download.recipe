@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest build of Microsoft Edge for the specified architecture</string>
+    <key>Identifier</key>
+    <string>com.github.ashesamurai.download.audacity</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Audacity</string>
+        <key>ARCHITECTURE</key>
+        <string>universal</string>
+        <key>CHANNEL</key>
+        <string>Release</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>GitHubReleasesInfoProvider</string>
+            <key>Arguments</key>
+            <dict>
+                <key>asset_regex</key>
+                <string>audacity-macos-\d.*\.dmg</string>
+                <key>github_repo</key>
+                <string>audacity/audacity</string>
+                <key>include_preleases</key>
+                <false />
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%url%</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

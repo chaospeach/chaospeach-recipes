@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads/Packages the latest arm64 build of Visual Studio Code and imports to Munki</string>
+    <string>Downloads and imports the latest arm64 version of Microsoft Edge</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.arm64.vscode</string>
+    <string>com.github.ashesamurai.munki.universal.audacity</string>
+    
     <key>Input</key>
     <dict>
-        <key>ARCHITECTURE</key>
-        <string>arm64</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/microsoft/visualstudiocode/%ARCHITECTURE%</string>
+        <string>apps/audacity</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,25 +18,26 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</string>
-            <key>developer</key>
-            <string>Microsoft</string>
+            <string>Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems.</string>
             <key>display_name</key>
-            <string>Visual Studio Code</string>
+            <string>%NAME%</string>
             <key>name</key>
             <string>%NAME%</string>
+            <key>developer</key>
+            <string>Audacity Team</string>
             <key>unattended_install</key>
             <true />
             <key>supported_architectures</key>
             <array>
-                <string>%ARCHITECTURE%</string>
+                <string>arm64</string>
+                <string>x86_64</string>
             </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.dmg.arm64.vscode</string>
+    <string>com.github.ashesamurai.download.audacity</string>
     <key>Process</key>
     <array>
         <dict>
@@ -46,7 +46,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+                <string>%pathname%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
