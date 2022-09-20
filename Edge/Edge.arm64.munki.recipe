@@ -19,6 +19,8 @@
             </array>
             <key>description</key>
             <string>Microsoft Edge is the fast and secure browser that helps you protect your data and save time and money.</string>
+            <key>developer</key>
+            <string>Microsoft</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
