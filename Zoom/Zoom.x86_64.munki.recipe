@@ -34,6 +34,10 @@
             <array>
                 <string>%ARCHITECTURE%</string>
             </array>
+            <key>blocking_applications</key>
+            <array>
+                <string>zoom.us.app</string>
+            </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>

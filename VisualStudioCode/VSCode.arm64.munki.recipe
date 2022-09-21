@@ -32,6 +32,10 @@
             <array>
                 <string>%ARCHITECTURE%</string>
             </array>
+            <key>blocking_applications</key>
+            <array>
+                <string>Visual Studio Code.app</string>
+            </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>

@@ -32,6 +32,10 @@
                 <string>arm64</string>
                 <string>x86_64</string>
             </array>
+            <key>blocking_applications</key>
+            <array>
+                <string>Audacity.app</string>
+            </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
