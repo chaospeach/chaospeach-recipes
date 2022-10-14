@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest build of Microsoft Edge for the specified architecture</string>
+    <string>Downloads the latest build of Audacity for the specified architecture</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.download.audacity</string>
     <key>Input</key>

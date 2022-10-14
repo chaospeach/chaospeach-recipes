@@ -3,14 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads and imports the latest universal Audacity build.</string>
+    <string>Downloads the latest build of Microsoft Teams</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.universal.audacity</string>
-    
+    <string>com.github.ashesamurai.download.universal.msteams</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/audacity</string>
+        <string>apps/microsoft/teams</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -18,13 +17,13 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems.</string>
+            <string>Connect and collaborate with anyone from anywhere on Teams.</string>
+            <key>developer</key>
+            <string>Microsoft</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
             <string>%NAME%</string>
-            <key>developer</key>
-            <string>Audacity Team</string>
             <key>unattended_install</key>
             <true />
             <key>supported_architectures</key>
@@ -34,19 +33,17 @@
             </array>
             <key>blocking_applications</key>
             <array>
-                <string>Audacity.app</string>
+                <string>Microsoft Teams.app</string>
             </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.audacity</string>
+    <string>com.github.ashesamurai.download.universal.msteams</string>
     <key>Process</key>
     <array>
         <dict>
-            <key>Processor</key>
-            <string>MunkiImporter</string>
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
@@ -54,6 +51,8 @@
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
         </dict>
     </array>
 </dict>

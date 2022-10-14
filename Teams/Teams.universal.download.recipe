@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest build of Microsoft Teams</string>
+    <key>Identifier</key>
+    <string>com.github.ashesamurai.download.universal.msteams</string>
+    <key>Input</key>
+    <dict>
+        <key>CHANNEL</key>
+        <string>Stable</string>
+        <key>LINKID</key>
+        <string>869428</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ashesamurai.download.msteams</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
