@@ -1,0 +1,2 @@
+x86_64: https://desktop.docker.com/mac/main/amd64/appcast.xml
+arm64: https://desktop.docker.com/mac/main/arm64/appcast.xml
