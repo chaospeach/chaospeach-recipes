@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads an imports the latest version of ardkick from Github</string>
+    <key>Identifier</key>
+    <string>com.github.ashesamurai.munki.ardkick</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>ardkick</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/ashesamurai/ardkick</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>Testing</string>
+            </array>
+            <key>description</key>
+            <string>Quick script to run after remotely ssh'ing to a Mac. Running ardkick as sudo will restart the ARDAgent.</string>
+            <key>developer</key>
+            <string>ashesamurai</string>
+            <key>display_name</key>
+            <string>%NAME%</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true />
+            <key>supported_architectures</key>
+            <array>
+                <string>arm64</string>
+                <string>x86_64</string>
+            </array>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ashesamurai.download.ardkick</string>
+    <key>Process</key>
+    <array>
+      <dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

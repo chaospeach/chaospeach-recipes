@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest build of Docker Desktop for arm64</string>
+    <string>Downloads the latest arm64 version of Docker Desktop.</string>
     <key>Identifier</key>
     <string>com.github.ashesamurai.download.arm64.docker</string>
     <key>Input</key>
