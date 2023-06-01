@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.docker.download</string>
+    <string>com.github.ashesamurai.download.docker</string>
     <key>Process</key>
     <array>
         <dict>
