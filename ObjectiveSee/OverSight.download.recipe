@@ -47,7 +47,7 @@
                 <key>archive_path</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/%NAME%-%version%.zip</string>
                 <key>purge_destination</key>
-                <false />
+                <true />
             </dict>
         </dict>
         <dict>
@@ -56,9 +56,9 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/OverSight\ Installer.app</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%/OverSight\ Installer.app</string>
                 <key>requirement</key>
-                <string>identifier "com.objective-see.oversight.installer" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VBG97UB4TA</string>
+                <string>anchor apple generic and identifier "com.objective-see.oversight.installer" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VBG97UB4TA)</string>
             </dict>
         </dict>
         <dict>
@@ -67,9 +67,9 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/OverSight\ Installer.app/Contents/Resources/OverSight.app</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%/OverSight\ Installer.app/Contents/Resources/OverSight.app</string>
                 <key>requirement</key>
-                <string>identifier "com.objective-see.oversight.installer" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VBG97UB4TA</string>
+                <string>anchor apple generic and identifier "com.objective-see.oversight" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VBG97UB4TA)</string>
             </dict>
         </dict>
     </array>
