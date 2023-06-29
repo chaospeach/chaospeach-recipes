@@ -5,3 +5,11 @@ A collection of recipes that are tailored to a multi-architecture Mac deployment
 autopkg repo-add https://github.com/ashesamurai/ashesamurai-recipes.git
 ```
 
+### Useful Commands
+> This is 100% a cheatsheet because I always forget 🤷‍♀️     
+
+| Info | Command|
+| --- | --- |
+| Grab codsign info from .appBundle | `codesign --display -r- --deep -v  path/app.app` |
+
+

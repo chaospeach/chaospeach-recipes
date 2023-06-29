@@ -3,15 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads an imports the latest version of ardkick from Github</string>
+    <string>Downloads and imports latest x86_64 version of Docker Desktop.</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.ardkick</string>
+    <string>com.github.ashesamurai.munki.x86_64.docker</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>ardkick</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/ashesamurai/ardkick</string>
+        <string>apps/docker/%ARCHITECTURE%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +17,9 @@
                 <string>Testing</string>
             </array>
             <key>description</key>
-            <string>Quick script to run after remotely ssh'ing to a Mac. Running ardkick as sudo will restart the ARDAgent.</string>
+            <string>Docker Desktop - the fastest way to containerize applications.</string>
             <key>developer</key>
-            <string>ashesamurai</string>
+            <string>Docker</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
@@ -30,18 +28,17 @@
             <true />
             <key>supported_architectures</key>
             <array>
-                <string>arm64</string>
-                <string>x86_64</string>
+                <string>%ARCHITECTURE%</string>
             </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.ardkick</string>
+    <string>com.github.ashesamurai.download.x86_64.docker</string>
     <key>Process</key>
     <array>
-      <dict>
+        <dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
             <key>Arguments</key>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest build of Azul JDK 20 (STS) for Intel (x86_64)</string>
+    <key>Identifier</key>
+    <string>com.github.ashesamurai.download.x86_64.azuljdk20</string>
+    <key>Input</key>
+    <dict>
+        <key>BASE_VERSION</key>
+        <string>20</string>
+        <key>ARCHITECTURE</key>
+        <string>x86_64</string>
+        <key>ENVIRONMENT</key>
+        <string>jdk</string>
+        <key>NAME</key>
+        <string>AzulJDK %BASE_VERSION%</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ashesamurai.download.azuljava</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
