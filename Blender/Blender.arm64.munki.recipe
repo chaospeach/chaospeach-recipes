@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest build of Blender for arm64</string>
+    <key>Identifier</key>
+    <string>com.github.ashesamurai.munki.arm64.blender</string>
+    <key>Input</key>
+    <dict>
+        <key>BASE_VERSION</key>
+        <string></string>
+        <key>MIRROR_OVERRIDE</key>
+        <string></string>
+        <key>NAME</key>
+        <string>Blender</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/blenderfoundation/blender/%BASE_VERSION%/%ARCHITECTURE%</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Blender is a public project hosted on blender.org, licensed as GNU GPL, owned by its contributors.</string>
+            <key>developer</key>
+            <string>Blender</string>
+            <key>display_name</key>
+            <string>%NAME%</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true />
+            <key>supported_architectures</key>
+            <array>
+                <string>%ARCHITECTURE%</string>
+            </array>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ashesamurai.download.arm64.blender</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
