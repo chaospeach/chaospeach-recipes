@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Stats</string>
+        <string>UTM</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/utm</string>
         <key>pkginfo</key>
