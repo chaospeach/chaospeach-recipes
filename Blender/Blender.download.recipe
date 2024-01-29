@@ -30,7 +30,7 @@
                 <string>%BASE_VERSION%</string>
                 <key>arch</key>
                 <string>%ARCHITECTURE%</string>
-                <key>mirror_override_rule</key>
+                <key>mirror_override_url</key>
                 <string>%MIRROR_OVERRIDE%</string>
             </dict>
         </dict>

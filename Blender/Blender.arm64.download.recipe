@@ -13,7 +13,7 @@
         <key>ARCHITECTURE</key>
         <string>arm64</string>
         <key>MIRROR_OVERRIDE</key>
-        <string></string>
+        <string />
         <key>NAME</key>
         <string>Blender</string>
     </dict>
