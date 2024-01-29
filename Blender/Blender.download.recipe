@@ -29,7 +29,7 @@
                 <key>base_version</key>
                 <string>%BASE_VERSION%</string>
                 <key>arch</key>
-                <string>%ARCHITECTURE%</key>
+                <string>%ARCHITECTURE%</string>
                 <key>mirror_override_rule</key>
                 <string>%MIRROR_OVERRIDE%</string>
             </dict>
