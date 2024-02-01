@@ -59,11 +59,12 @@ class AzulURLProvider(URLGetter):
 
         # Use the download feature of URLGetter (yay subclasses)
         version_page = self.download(BASEURL, text=True)
-
         # Craft regex to scrape for our specified version (returns tuples)
         version_arch = ARCHITECTURES[self.env["arch"]]
         re_basever = "%s".replace(".", "\.") % self.env["base_version"]
-        re_match = re.compile("\"zulu(.*)-ca-(%s%s.*)-%s_%s.dmg\"" % ( self.env["environment"], re_basever, OS, version_arch ))
+        re_match = re.compile(
+            "\"\/zulu\/bin\/zulu(.*)-ca-(%s%s.*)-%s_%s.dmg\"" % ( self.env["environment"], re_basever, OS, version_arch )
+        )
         version_matches = re.findall(re_match, version_page)
         self.output("Checking versions for %s (%s)" % ( self.env["base_version"], version_arch ))
 

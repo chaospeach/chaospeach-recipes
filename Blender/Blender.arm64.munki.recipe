@@ -3,15 +3,19 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads an imports the latest version of ardkick from Github</string>
+    <string>Downloads the latest build of Blender for arm64</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.ardkick</string>
+    <string>com.github.ashesamurai.munki.arm64.blender</string>
     <key>Input</key>
     <dict>
+        <key>BASE_VERSION</key>
+        <string></string>
+        <key>MIRROR_OVERRIDE</key>
+        <string></string>
         <key>NAME</key>
-        <string>ardkick</string>
+        <string>Blender</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/ashesamurai/ardkick</string>
+        <string>apps/blenderfoundation/blender/%BASE_VERSION%/%ARCHITECTURE%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +23,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Quick script to run after remotely ssh'ing to a Mac. Running ardkick as sudo will restart the ARDAgent.</string>
+            <string>Blender is a public project hosted on blender.org, licensed as GNU GPL, owned by its contributors.</string>
             <key>developer</key>
-            <string>ashesamurai</string>
+            <string>Blender</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
@@ -30,27 +34,19 @@
             <true />
             <key>supported_architectures</key>
             <array>
-                <string>arm64</string>
-                <string>x86_64</string>
+                <string>%ARCHITECTURE%</string>
             </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.ardkick</string>
+    <string>com.github.ashesamurai.download.arm64.blender</string>
     <key>Process</key>
     <array>
-      <dict>
+        <dict>
             <key>Processor</key>
-            <string>MunkiImporter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_path</key>
-                <string>%pathname%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
-            </dict>
+            <string>EndOfCheckPhase</string>
         </dict>
     </array>
 </dict>

@@ -14,7 +14,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>Testing</string>
+                <string>testing</string>
             </array>
             <key>description</key>
             <string>Docker Desktop - the fastest way to containerize applications.</string>

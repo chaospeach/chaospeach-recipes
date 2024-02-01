@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads an imports the latest version of ardkick from Github</string>
+    <string>Downloads an imports the latest version of UTM from Github</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.ardkick</string>
+    <string>com.github.ashesamurai.munki.utm</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>ardkick</string>
+        <string>UTM</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/ashesamurai/ardkick</string>
+        <string>apps/utm</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Quick script to run after remotely ssh'ing to a Mac. Running ardkick as sudo will restart the ARDAgent.</string>
+            <string>UTM is a full featured system emulator and virtual machine host for iOS and macOS.</string>
             <key>developer</key>
-            <string>ashesamurai</string>
+            <string>UTM</string>
             <key>display_name</key>
             <string>%NAME%</string>
             <key>name</key>
@@ -31,14 +31,13 @@
             <key>supported_architectures</key>
             <array>
                 <string>arm64</string>
-                <string>x86_64</string>
             </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.ardkick</string>
+    <string>com.github.ashesamurai.download.utm</string>
     <key>Process</key>
     <array>
       <dict>
