@@ -50,7 +50,7 @@ class BlenderURLProvider( URLGetter ):
             'description': "URL for downloading the latest version of Blender"
         },
         'download_version': {
-            'description': "Version of jre/jdk to from the download_url"
+            'description': "Full version string of retrieved dmg"
         },
         'download_file': {
             'description': "Full filename of download"
@@ -60,7 +60,7 @@ class BlenderURLProvider( URLGetter ):
     def getDownloadURL( self ):
         # Combine mirror url with version specified from recipe
         release_url = '%sBlender%s/' % ( pre_mirror_url, self.env['base_version'] )
-        if '%s' % self.env['mirror_override_url']:
+        if self.env['mirror_override_url']:
             # We're overriding the mirror
             release_override_url = ( '%sBlender%s/' % ( self.env['mirror_override_url'], self.env['base_version'] ) )
             release_index_page = self.download( release_override_url, text=True )
