@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of UTM from Github</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.utm</string>
+    <string>com.github.chaospeach.download.utm</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

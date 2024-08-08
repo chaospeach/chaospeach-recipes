@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest x86_64 version of Docker Desktop.</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.x86_64.docker</string>
+    <string>com.github.chaospeach.download.x86_64.docker</string>
     <key>Input</key>
     <dict>
         <key>ARCHITECTURE</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.docker</string>
+    <string>com.github.chaospeach.download.docker</string>
     <key>Process</key>
     <array>
         <dict>

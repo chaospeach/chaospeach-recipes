@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads an imports the latest version of Stats from Github</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.stats</string>
+    <string>com.github.chaospeach.munki.stats</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -38,7 +38,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.stats</string>
+    <string>com.github.chaospeach.download.stats</string>
     <key>Process</key>
     <array>
       <dict>
