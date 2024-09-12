@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads and imports latest Intel (x86_64) version of AzulJDK 17 (LTS) from Zulu.</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.x86_64.azuljdk17</string>
+    <string>com.github.chaospeach.munki.x86_64.azuljdk17</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
@@ -35,7 +35,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.x86_64.azuljdk17</string>
+    <string>com.github.chaospeach.download.x86_64.azuljdk17</string>
     <key>Process</key>
     <array>
         <dict>

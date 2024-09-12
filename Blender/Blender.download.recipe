@@ -5,7 +5,7 @@
        <key>Description</key>
     <string>Downloads the latest build of Blender for the specified achitecture and version</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.blender</string>
+    <string>com.github.chaospeach.download.blender</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>

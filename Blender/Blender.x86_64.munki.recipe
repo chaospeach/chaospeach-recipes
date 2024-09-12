@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest build of Blender for x86_64</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.munki.x86_64.blender</string>
+    <string>com.github.chaospeach.munki.x86_64.blender</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>
@@ -41,7 +41,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.x86_64.blender</string>
+    <string>com.github.chaospeach.download.x86_64.blender</string>
     <key>Process</key>
     <array>
         <dict>

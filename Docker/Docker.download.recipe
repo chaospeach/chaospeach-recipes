@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Docker Desktop for the specified achitecture</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.docker</string>
+    <string>com.github.chaospeach.download.docker</string>
     <key>Input</key>
     <dict>
         <key>ARCHITECTURE</key>

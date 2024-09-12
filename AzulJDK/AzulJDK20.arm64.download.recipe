@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest build of Azul JDK 20 (STS) for arm64</string>
     <key>Identifier</key>
-    <string>com.github.ashesamurai.download.arm64.azuljdk20</string>
+    <string>com.github.chaospeach.download.arm64.azuljdk20</string>
     <key>Input</key>
     <dict>
         <key>BASE_VERSION</key>
@@ -20,7 +20,7 @@
     <key>MinimumVersion</key>
     <string>2.3</string>
     <key>ParentRecipe</key>
-    <string>com.github.ashesamurai.download.azuljava</string>
+    <string>com.github.chaospeach.download.azuljava</string>
     <key>Process</key>
     <array>
         <dict>
