@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads and imports the specified build of Azul Java (JRE/JDK) for x86_64 systems.</string>
+    <key>Identifier</key>
+    <string>com.github.chaospeach.azuljava.x86_64.munki</string>
+    <key>Input</key>
+    <dict>
+        <key>BASE_VERSION</key>
+        <string>0</string>
+        <key>ARCHITECTURE</key>
+        <string>x86_64</string>
+        <key>ENVIRONMENT</key>
+        <string>jdk</string>
+        <key>NAME</key>
+        <string>Azul%ENVIRONMENT% %BASE_VERSION%</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/azuljava/%BASE_VERSION%/%ENVIRONMENT%/%ARCHITECTURE%</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.chaospeach.azuljava.x86_64.download</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
