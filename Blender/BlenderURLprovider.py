@@ -13,8 +13,8 @@ import re
 from autopkglib import ProcessorError
 from autopkglib.URLGetter import URLGetter
 
-# https://www.blender.org/download/release/Blender4.0/blender-4.0.2-macos-x64.dmg/
-pre_mirror_url = 'https://www.blender.org/download/release/'
+# https://download.blender.org/download/release/Blender4.0/blender-4.0.2-macos-x64.dmg/
+pre_mirror_url = 'https://download.blender.org/download/release/'
 os_str = 'macos'
 
 archs = {
@@ -38,7 +38,7 @@ class BlenderURLProvider( URLGetter ):
             'description': "Base blender version (format: 'x.y')"
         },
         'mirror_override_url' : {
-            'required': True,
+            'required': False,
             'description': "Use the specified mirror URL (incl. trailing '/', exclude 'BlenderX.Y')"
         }
     }
