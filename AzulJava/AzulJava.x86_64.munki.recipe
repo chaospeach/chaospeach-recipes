@@ -18,6 +18,27 @@
         <string>Azul%ENVIRONMENT% %BASE_VERSION%</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/azuljava/%BASE_VERSION%/%ENVIRONMENT%/%ARCHITECTURE%</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Azul Zulu build of %ENVIRONMENT% %BASE_VERSION% (%ARCHITECTURE%).</string>
+            <key>developer</key>
+            <string>Azul</string>
+            <key>display_name</key>
+            <string>%NAME%</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true />
+            <key>supported_architectures</key>
+            <array>
+                <string>%ARCHITECTURE%</string>
+            </array>
+        </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
